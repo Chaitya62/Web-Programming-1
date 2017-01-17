@@ -9,7 +9,7 @@ nav.navbar{
 	display: block;
 	padding: 1%;
 	background: white;
-	border: 1px red solid;
+	/*border: 1px red solid;*/
 }
 
 nav.navbar ul{
@@ -37,8 +37,44 @@ ul.nav-list li{
 p{
 	padding: 5%;
 }
+
+
+/*footer style*/
 footer.footer{
 	display: block;
 	padding: 2%;
+	width: 100%;
 	position: relative;
 }
+footer.footer small{
+	width: 30%;
+	float: left;
+	display: inline-block;
+}
+
+footer.footer div.social-icons{
+	width: 50%;
+	float: right;
+	display: inline-block;
+}
+ul.social-links{
+	display: inline-block;
+	margin: 0px;
+	width: 100%;
+	height: auto;
+	list-style: none;
+}
+ul.social-links li{
+	padding: 1%;
+	cursor: pointer;
+	float: left;
+	display: inline-block;
+	text-decoration: none;
+}
+ul.social-links a{
+	text-decoration: none;
+	color: white;
+}
+
+
+/*footer style end*/
