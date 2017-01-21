@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial 2</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<h1 id="heading">Tutorial 2</h1>
+	
+	<div class="container">
+		<h3>Demos</h3>
+		<ol style="font-size: 20px;">
+			<li><a href="table.html">Table Demo</a></li>
+			<li><a href="list.html" target="_blank">List Demo</a><span class="info"> opens in different tab</span></li>
+			<li><a href="image.html">Image Demo</a></li>
+			<li><a href="hyperlink.html">HyperLink Demo</a></li>
+
+		</ol>
+	</div>
+	<h4>Set List Type</h4>
+	<button onclick="setType('1	')">Numbers</button>
+	<button onclick="setType('I')">Roman uppercase</button>
+	<button onclick="setType('i')">Roman lowercase</button>
+	<button onclick="setType('a')">Lowercase alphabets</button>
+	<button onclick="setType('A')">Uppercase alphabets</button>
+<script>
+	var ordered_list = (document.getElementsByTagName('ol'))[0];
+	function setType(type){
+		ordered_list.setAttribute("type",type);
+		return true;
+	}
+</script>
+</body>
+</html>

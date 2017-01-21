@@ -1,0 +1,26 @@
+table{
+	max-width: 100%;
+	border: 1px solid black;
+}
+
+/*Styling a Class*/
+.container{
+	max-width: 100%;
+	
+}
+.scroll{
+	height: 200vh;
+	padding-top: 50%;
+}
+.info{
+	color: red;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+
+/*styling an id*/
+#heading{
+	text-align: center;
+}
+

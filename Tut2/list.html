@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>List Demo</title>
+</head>
+<body>
+	<h3><a href="index.html">Go Back</a></h3>
+	<h4>Friends</h4>
+	<ul type="1" >
+		 <li>Rachel Green</li>    
+		<li>Monica Geller</li>
+		<li>Phoebe Buffay</li>
+		<li>Joey Tribbiani</li>
+		<li>Chandler Bing</li>
+		<li>Ross Geller</li>
+	</ul>
+	<p><strong>Note</strong> Ordered List is on <a href="index.html">here</a></p>
+<h4>Set List Type</h4>
+	<button onclick="setType('square')">Square</button>
+	<button onclick="setType('circle')">Circle</button>
+	<button onclick="setType('disc')">Disc</button>
+<h4>Zoom to see difference between disc and square</h4>
+		<button onclick="zoomIn()">Zoom In</button>
+		<button onclick="zoomOut()">Zoom Out</button>
+
+<script>
+	var unordered_list = (document.getElementsByTagName('ul'))[0];
+	function setType(type){
+		unordered_list.setAttribute("type",type);
+		return true;
+	}
+	function zoomIn(){
+		document.body.style.zoom = "200%";							
+		return true;
+	}
+	function zoomOut(){
+		document.body.style.zoom = "100%";
+		return true;
+	}
+</script>
+</body>
+</html>
