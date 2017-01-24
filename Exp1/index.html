@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exp 1</title>
+	</head>
+
+	<body text="#FFA"  bgcolor="#000">
+		<header>	
+				<h1>Harambe Cincinnati</h1>
+		<hr>
+		<p><font color="pink" size="6">Harambe</font> the Gorilla was a 17-year-old Western lowland silverback gorilla who was shot and killed at the <font color="pink">Cincinnati Zoo</font> after a child fell into his enclosure in late May 2016. The incident was wildly criticized online by many who blamed the child’s parents for the gorilla’s untimely death.</p>
+		</header>
+	
+		<br>
+			<center>
+				<p>	
+					<img style="width:70%"  src="https://i.ytimg.com/vi/s2Wd-1euBF8/maxresdefault.jpg" alt="">
+			</center>
+
+			<center>
+					<table border="1px" cellspacing="0px" cellpadding="10px">	
+				<thead>	
+					<tr>	
+					<th>Qualities</th>
+					<th>Harambe</th>
+					<th>Humans</th>
+					</tr>
+				</thead>
+
+				<tbody>
+						<tr>
+							<td>Saves Infant</td>
+							<td>Always</td>
+							<td>Sometimes</td>
+						</tr>
+						<tr>
+							<td>My Man</td>
+							<td>Always</td>
+							<td>Never</td>
+						</tr>
+						<tr>
+							<td>Respects Opinions</td>
+							<td>Always</td>
+							<td>Never</td>
+						</tr>
+						<tr>
+						<td>Better Human</td>
+						<td>God like</td>
+						<td>Insane</td>
+
+						</tr>
+
+				</tbody>
+			</table>
+			</center>
+		<center style="color:white;">
+			<h2>Tribute Video to Harmabe</h2>
+			<audio controls>
+  				
+  					<source src="harambe.mp3" type="audio/mp3">
+  					Your browser does not support the audio tag.
+			</audio>
+			<br>	<br>	
+			<iframe width="600" height="338" src="https://www.youtube.com/embed/OJw3MmL-Omk" frameborder="0" allowfullscreen></iframe>
+
+			<h3>What do Harambe follwers say ?</h3>
+			<ol id="comments">	
+					<li>legitimately cried. i miss u</li>
+					<li>I still miss him too.</li>
+					<li>The emotions in this video are so raw. #dicksout</li>
+			</ol>
+
+			<h3>Leave your comment.</h3>
+			<input type="text" id="comment" >
+			<button type="submit" onclick='submit()'>Add Comment</button>	
+			<br>	
+			<a href="#DOFH" style="color: white; text-decoration: none;">Click here to show respect</a>		
+			</center>
+
+			
+			<br>	
+				<input type="color" id="color" />
+		<button type="submit" onclick="changeBg()">Change color</button>
+		<hr>	
+			<footer>	
+				<h4>Made with love for harambe</h4>
+			</footer>
+	</body>
+<script>	
+		function changeBg(){
+			var color = document.getElementById('color');
+			document.body.style.backgroundColor = color.value;
+		}
+		var li_a = "<li>";
+		var li_b = "</li>"
+		var comments = document.getElementById('comments');
+		function submit(){
+			var comment = document.getElementById('comment');
+			addComment(comment.value.trim());
+			comment.value = "";
+		}
+		function addComment(comment){
+				if(comment!=""){
+							var li = document.createElement('li');
+								li.append(comment);
+							comments.appendChild(li);
+
+				}
+		};
+</script>
+
+</html>
