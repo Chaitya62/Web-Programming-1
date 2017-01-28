@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tut 3</title>
+</head>
+<style>
+	.container{
+		padding: 10%;
+	}
+	input{
+		display: block;
+		margin: 0.9%;
+	}
+	body{
+		background: black;
+	}
+	.input-inline{
+		display: inline-block;
+	}
+	input[type="radio"],input[type="reset"],input[type="submit"]{
+		display: inline-block;
+	}
+	form{
+		width: 40%;
+		background: blue;
+		color: white;
+	}
+</style>
+<body>
+	<div class="container">
+		<h1><a href="./demo.html">click here for audio/video demo</a></h1>
+		<center>
+
+			<form action="." >
+				<fieldset>
+					<legend>Registeration Form</legend>
+					<input type="text" placeholder="Enter your name" required />
+					<input type="email" placeholder="Enter your email" required />
+					<input type="password" placeholder="Enter a password" required />
+					<input type="password" placeholder="Confirm password" required />
+					 
+					<label for="color">Your favourite color: </label>
+					<input type="color" name="color" />
+					<label for="birthday">Enter your Birth Date</label>
+					<input type="date" name="birthday">
+					
+					<label for="insaneScale">How insane are you?</label>
+					<input type="range" name="insaneScale">
+					<input type="radio" name="gender" value="male"> Male
+					<input type="radio" name="gender" value="female"> Female
+					<input type="radio" name="gender" value="others"> Others 
+					<br>
+					<textarea name="about" id="" cols="30" rows="10" placeholder="tell us about you">
+					</textarea>
+					<br>
+					<input type="submit" name="submit" />
+					<input type="reset" name="reset" />
+
+				</fieldset>
+		</form>
+		</center>
+
+
+
+	</div>
+</body>
+</html>
