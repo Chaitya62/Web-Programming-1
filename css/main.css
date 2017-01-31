@@ -93,6 +93,10 @@ body{
 	text-align: center;
 }
 
+hr{
+	color: grey;
+	background: grey;
+}
 
 /* Helper classes end */
 

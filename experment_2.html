@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<style>
+	body{
+	height: auto;
+}
+/*navbar style*/
+nav.navbar{
+	width: 100%;
+	min-height: 100px;
+	height: auto;
+	display: block;
+	padding: 1%;
+	background: white;
+	/*border: 1px red solid;*/
+}
+
+nav.navbar ul{
+	display: block;
+	width: 50%;
+	float: right;
+}
+nav.navbar h1{
+	width: 40%;
+	float: left;
+}
+
+ 
+ul.nav-list a{
+	text-decoration: none;
+	color: black;
+}
+
+ul.nav-list li{
+	float: left;
+	padding: 3%;
+	display: inline-block;
+}
+/*navbar style ends*/
+p{
+	padding: 5%;
+}
+
+
+/*footer style*/
+footer.footer{
+	display: block;
+	padding: 2%;
+	width: 100%;
+	position: relative;
+}
+footer.footer small{
+	width: 30%;
+	float: left;
+	display: inline-block;
+}
+
+footer.footer div.social-icons{
+	width: 50%;
+	float: right;
+	display: inline-block;
+}
+ul.social-links{
+	display: inline-block;
+	margin: 0px;
+	width: 100%;
+	height: auto;
+	list-style: none;
+}
+
+ul.social-links li{
+	padding: 1%;
+	cursor: pointer;
+	float: left;
+	display: inline-block;
+	text-decoration: none;
+}
+ul.social-links a{
+	text-decoration: none;
+	color: black;
+}
+
+body{
+
+	width: 100% ;
+	overflow-x: hidden;
+}
+
+
+/* Helper classes */
+.area-test{
+	border: 1px red solid;
+}
+
+.align-center{
+	text-align: center;
+}
+
+hr{
+	color: grey;
+	background: grey;
+}
+
+/* Helper classes end */
+
+.container{
+	
+
+	width: 100%;
+	display: table;
+
+}
+
+.main{
+	min-height: 90vh;
+}
+
+
+
+
+/*footer style end*/
+		form{
+	width: 40%;
+	display: inline-block;
+	text-align:left;
+	padding: 4%;
+
+}
+form {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F7F7F7;
+    padding: 25px 15px 25px 10px;
+    font: 12px Georgia, "Times New Roman",
+}
+
+
+
+input{
+	border-radius: 3px;
+	width: 50%;
+	margin: 3%;
+	padding: 4px;
+
+
+}
+
+
+input[type="submit"],input[type="reset"]{
+	width: auto;
+	padding: 1%;
+	min-width: 15%;
+	max-width: 20%;
+	display: inline-block;
+	border-radius: 3px;
+	cursor: pointer;
+}
+input[type="radio"],input[type="checkbox"]{
+	display: inline-block;
+	width: auto;
+}
+input[type="text"],input[type="email"],
+input[type="password"],select,textarea,
+input[type="date"],input[type="time"]{
+	 border: 1px solid #DADADA;
+    color: #888;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height:15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px
+}
+textarea{
+	height: 100px;
+}
+label{
+	padding: 3%;
+}
+textarea{
+	padding: 3px;
+	margin: 1%;
+	width: 50%;
+	display: block;
+}
+input:focus,textarea:focus{
+	border: 1px lightblue solid;
+}
+	</style>
+</head>
+<body bgcolor="#AAA" style="padding: 2%;">
+
+	
+	<div class="container align-center">
+		<div class="form">
+			<form action="./contact.html"  >
+				<fieldset>
+					<legend>Detailed Form</legend>
+					<input type="text" placeholder="Enter your name" maxlength="255" autofocus required />
+				<input type="email" placeholder="Enter your email" required />
+				<input type="password" placeholder="Enter your secret key" required> 
+				<br>
+				<label for="dob">Enter your birthday</label> 
+				<input type="date" name="dob" />
+				<br>
+				<label for="color">Choose your favourite color</label>
+				<input type="color">
+				<input type="text" name="phonenumber"  placeholder="Enter your 10 digit Number" pattern="[0-9]{10}" />
+				<h4>Gender</h4>
+				<input type="radio" name="gender" value="male"> male
+				<input type="radio" name="gender" value="female"> female
+				<input type="radio" name="gender" value="others"> others
+				<h4>Hobbies</h4>
+				<div class="checkbox">
+					<input type="checkbox" name="hobbies" value="drawing" /> 
+					<span>Drawing</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" name="hobbies" value="dancing" />
+					<span> Dancing</span>	
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" name="hobbies" value="programming" /> 
+					<span>Programming</span>
+				</div>
+				<div class="time-input">
+					<label for="time">What time do you wake up? </label>
+					<input type="time" name="time" />
+				</div>
+				<div class="slider-input">
+					<label for="scale">How bold are you?</label><br>
+					<input type="range" name="scale" />
+				</div>
+				<div class="options">
+				<label for="cars">Which TV Show do you like?</label>
+					<select name="cars">
+						  <option value="GOT">Game of Thrones</option>
+						  <option value="friends">F.R.I.E.N.D.S.</option>
+						  <option value="himym">How I met your mother?</option>
+						  <option value="siliconvalley">Silicon Valley</option>
+					</select>
+				</div>
+				<br>
+				<div class="message align-center">
+						<textarea style="" name="comment" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+				</div>
+				<input type="submit" class="submit" value="submit" />
+				<input type="reset" class="reset" value="reset">
+				</fieldset>
+
+
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
