@@ -25,9 +25,7 @@ input{
 
 }
 
-input:focus,textarea:focus{
-	border: 1px lightblue solid;
-}
+
 input[type="submit"],input[type="reset"]{
 	width: auto;
 	padding: 1%;
@@ -69,4 +67,7 @@ textarea{
 	margin: 1%;
 	width: 50%;
 	display: block;
+}
+input:focus,textarea:focus{
+	border: 1px lightblue solid;
 }
