@@ -1,0 +1,72 @@
+form{
+	width: 40%;
+	display: inline-block;
+	text-align:left;
+	padding: 4%;
+
+}
+form {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F7F7F7;
+    padding: 25px 15px 25px 10px;
+    font: 12px Georgia, "Times New Roman",
+}
+
+
+
+input{
+	border-radius: 3px;
+	width: 50%;
+	margin: 3%;
+	padding: 4px;
+
+
+}
+
+input:focus,textarea:focus{
+	border: 1px lightblue solid;
+}
+input[type="submit"],input[type="reset"]{
+	width: auto;
+	padding: 1%;
+	min-width: 15%;
+	max-width: 20%;
+	display: inline-block;
+	border-radius: 3px;
+	cursor: pointer;
+}
+input[type="radio"],input[type="checkbox"]{
+	display: inline-block;
+	width: auto;
+}
+input[type="text"],input[type="email"],
+input[type="password"],select,textarea,
+input[type="date"],input[type="time"]{
+	 border: 1px solid #DADADA;
+    color: #888;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height:15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px
+}
+textarea{
+	height: 100px;
+}
+label{
+	padding: 3%;
+}
+textarea{
+	padding: 3px;
+	margin: 1%;
+	width: 50%;
+	display: block;
+}

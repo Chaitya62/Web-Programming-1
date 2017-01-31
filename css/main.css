@@ -64,6 +64,7 @@ ul.social-links{
 	height: auto;
 	list-style: none;
 }
+
 ul.social-links li{
 	padding: 1%;
 	cursor: pointer;
@@ -75,6 +76,39 @@ ul.social-links a{
 	text-decoration: none;
 	color: black;
 }
+
+body{
+
+	width: 100% ;
+	overflow-x: hidden;
+}
+
+
+/* Helper classes */
+.area-test{
+	border: 1px red solid;
+}
+
+.align-center{
+	text-align: center;
+}
+
+
+/* Helper classes end */
+
+.container{
+	
+
+	width: 100%;
+	display: table;
+
+}
+
+.main{
+	min-height: 90vh;
+}
+
+
 
 
 /*footer style end*/
