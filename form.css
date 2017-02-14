@@ -1,0 +1,50 @@
+.contact_form label
+{
+width:150px;
+margin-top:3px;
+display:inline-block;
+}
+.contact_form radio
+{
+width:50px;
+margin-top:3px;
+display:inline-block;
+}
+.contact_form input
+{
+height:20px;
+width:220px;
+padding:5px; 8px;
+}
+.contact_form textarea
+{
+padding:3px;
+width:300px;
+}
+.contact_form
+{
+margin-left:50px
+}
+
+
+.contact_form div
+{
+    background-color: lightgrey;
+    width: 300px;
+    border: 2px solid black;
+    padding: 25px;
+    margin: 25px;
+}
+.contact_form button 
+{
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

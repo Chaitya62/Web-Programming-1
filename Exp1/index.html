@@ -3,17 +3,39 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Exp 1</title>
+		<link rel="stylesheet" href="main.css">
 	</head>
+	<style type="text/css">
+		header{
+			text-align: center;
+		}
+		hr{
+			border-top: 1px solid red;
+		}
+		.header,.bottom{
+			display: inline-block;
+			width: 80%;
+			text-align: center;
+		}
+		#comments li{
+			list-style: none;
+		}
+		
+
+	</style>
 
 	<body text="#FFA"  bgcolor="#000">
 		<header>	
-				<h1>Harambe Cincinnati</h1>
+		<div class="header">
+					<h1>Harambe Cincinnati</h1>
 		<hr>
 		<p><font color="pink" size="6">Harambe</font> the Gorilla was a 17-year-old Western lowland silverback gorilla who was shot and killed at the <font color="pink">Cincinnati Zoo</font> after a child fell into his enclosure in late May 2016. The incident was wildly criticized online by many who blamed the child’s parents for the gorilla’s untimely death.</p>
+		</div>
 		</header>
 	
 		<br>
-			<center>
+			<div class="main">
+				<center>
 				<p>	
 					<img style="width:70%"  src="https://i.ytimg.com/vi/s2Wd-1euBF8/maxresdefault.jpg" alt="">
 			</center>
@@ -64,12 +86,12 @@
 			<br>	<br>	
 			<iframe width="600" height="338" src="https://www.youtube.com/embed/OJw3MmL-Omk" frameborder="0" allowfullscreen></iframe>
 
-			<h3>What do Harambe follwers say ?</h3>
-			<ol id="comments">	
+			<h3>What do Harambe's followers say ?</h3>
+			<ul id="comments">	
 					<li>legitimately cried. i miss u</li>
 					<li>I still miss him too.</li>
-					<li>The emotions in this video are so raw. #dicksout</li>
-			</ol>
+					<li>The emotions in this video are so raw.</li>
+			</ul>
 
 			<h3>Leave your comment.</h3>
 			<input type="text" id="comment" >
@@ -82,7 +104,14 @@
 			<br>	
 				<input type="color" id="color" />
 		<button type="submit" onclick="changeBg()">Change color</button>
-		<hr>	
+		<br>
+		
+			</div>
+			<center>
+			<div class="bottom">
+			<hr>
+		</div>
+		</center>	
 			<footer>	
 				<h4>Made with love for harambe</h4>
 			</footer>

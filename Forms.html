@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML forms</title>
+<link rel="stylesheet" href="form.css">
+</head>
+<style>
+div {
+    background-color: white;
+    width: 500px;
+    border: 25px  solid black;
+    padding: 25px;
+    margin: 25px;
+}
+div {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #dddddd;
+    width: 30px;
+    border-radius: 25px;
+}
+</style>
+<body>
+<div>
+<form class="contact_form">
+<label for="name"><font size="3" color="blue">Full Name</font></label><br>
+<input type="text" name="firstname" placeholder="First name"><br>
+<label for="email"><font size="3" color="blue">Email</font></label><br>
+<input type="email" name="email" placeholder="Enter Email"><br>
+<label for="contact"><font size="3" color="blue">Roll no</font></label><br>
+<input type="number" name="contact" placeholder="Enter number"><br>
+Select an Option:<br>
+<select name="Year">
+  <option value="option1">First year</option>
+   <option value="option2">Second year</option>
+  <option value="option3">Third year</option>
+   <option value="option4">Last year</option>
+</select><br>
+<input type="radio" name="division" value="Div:A" checked> Div:A <input type="radio" name="Division" value="Div:B"> Div:B<br>
+Message:<br>
+<textarea name="message" rows="10" cols="30"></textarea><br><br>
+<div><button type="button" onclick="alert('Hello world!')">submit</button></div>
+
+</form> 
+</div>
+</body>
+</html>
+ss
