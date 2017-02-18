@@ -45,13 +45,21 @@ footer.footer{
 	padding: 2%;
 	width: 100%;
 	position: relative;
+	bottom: 0;
+	animation: roll 2s 1;
 }
 footer.footer small{
 	width: 30%;
 	float: left;
 	display: inline-block;
+
 }
 
+header{
+	position: relative;
+	top: 0;
+	animation: roll 2s 1;
+}
 footer.footer div.social-icons{
 	width: 50%;
 	float: right;
@@ -81,8 +89,54 @@ body{
 
 	width: 100% ;
 	overflow-x: hidden;
+	
 }
 
+section{
+	display: block;
+	position: relative;
+	animation: roll2 2s 1;
+
+}
+.main-article{
+	background: ;
+	width: 50%;
+	float: left;
+
+}
+.side-article{
+	width: 30%;
+	float: right;
+
+}
+article{
+	padding: 20px;
+	margin: 1%;
+	display: inline;
+	position: relative;
+	min-height: 40vh;
+}
+
+@keyframes roll{
+	0% {  background: black; transform: translate(200%,0%); opacity: 0; }
+	100% {  background: white; transform: translate(0%,0%); opacity: 1; }
+}
+
+@keyframes roll2{
+	0% {  background: black; transform: translate(-200%,0%); opacity: 0; }
+	100% {  background: white; transform: translate(0%,0%); opacity: 1; }
+}
+@keyframes roll3{
+	0% {  background: white; transform: translate(0%,-100%); opacity: 0; }
+	100% {  background: white; transform: translate(0%,0%); opacity: 1; }
+}
+article h3{
+	display: inline;
+	animation: roll 2s 1;
+}
+article h4{
+	
+}
 
 /* Helper classes */
 .area-test{
@@ -105,11 +159,12 @@ hr{
 
 	width: 100%;
 	display: table;
+	animation: roll3 2s 1;
 
 }
 
 .main{
-	min-height: 90vh;
+	
 }
 
 
