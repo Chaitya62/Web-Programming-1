@@ -1,0 +1,106 @@
+body{
+	background: #286fd2;
+	color: #2c3e50;
+}
+
+@keyframes roll{
+	0%{
+		transform: translateY(100%) rotateY(90deg);
+
+	}
+	50%{
+		transform: rotateY(0deg);
+
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+
+@keyframes  show{
+	0%{
+		opacity: 0;
+		background: #2c3e50;
+		color: white;
+	}
+	50%{
+		
+		background: white;
+		color: black;
+
+	}
+	100%{
+		color: #2c3e50;
+		opacity: 1;
+	}
+}
+.cal-bg{
+	display: inline-block;
+	background: #3884ec;
+	padding: 1%;
+	width: 400px;
+	height: 500px;
+	box-shadow: 12px 10px 20px -3px #164cc1;
+}
+#calculator{
+	display: inline-block;
+	background: rgba(3, 169, 244, 0.58);
+	height: 400px;
+	width: 400px;
+	border-radius: 10px;
+}
+.screen{
+	background: rgba(0.3,0.4,0.2,1);
+	margin: 1%;
+	height: 60px;
+	width: 360px;
+	margin-bottom: 2%;
+	text-align: right;
+	padding: 20px;
+	font-size: 60px;
+	border-radius: 10px;
+}
+
+
+header{
+	background: white;
+}
+.button{
+	float: left;
+	width: 80px;
+	height: 75px;
+	background: rgba(244,244,244,0.9);
+	text-align: center;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 2px 4px 5px -1px #164cc1;
+	margin: 10px;
+	transform: rotateX(20deg);
+	transition: 0.3s all ease;
+	animation: 3s show;
+}
+.button:hover{
+	background: white;
+	transform: rotateX(0deg);
+
+}
+
+.button span{
+	padding: 1%;
+	font-size: 64px;
+}
+.cal-body{
+
+	border-radius: 10px;
+	background: rgba(3, 169, 244, 0.9);
+	width: 400px;
+	min-height: 400px;
+}
+
+.cal-numbers{
+	border-radius: 0px 0px 10px 10px;
+
+	background: rgba(3, 169, 244, 0.58);
+	width: 400px;
+	min-height: 400px;
+}

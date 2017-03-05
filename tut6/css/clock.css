@@ -1,0 +1,29 @@
+body{
+	background-image: url('http://www.aqansari.com/i/2017/03/real-space-wallpaper-picture.jpg');
+	background-color: black;
+	background-size: cover;
+	color: white;
+	font-size: 30px;
+	height: 100vh;
+	overflow: hidden;
+}
+#clock{
+	display: inline-block;
+	background: rgba(100,255,255,0.3);
+	width: 400px;
+	box-shadow: 10px 3px 40px -10px black;
+	height: 200px;
+	color: white;
+	border-radius: 10px 20px 30px 50px;
+	text-shadow: 3px 3px black;
+	text-align: center;
+}
+input[type="radio"]{
+	cursor: pointer;
+}
+#clock span{
+	display: inline-block;
+	font-size: 100px;
+	margin-top: 20px;
+	text-align: center;
+}
