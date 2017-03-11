@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/form.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+</head>
+<body bgcolor="#AAA" style="padding: 2%;">
+
+
+	<div class="container align-center">
+		<div class="form">
+			<form action="./contact.html"  >
+				<fieldset>
+					<legend>Detailed Form</legend>
+					<input type="text" placeholder="Enter your name" maxlength="255" autofocus required />
+				<input type="email" placeholder="Enter your email" required />
+				<input type="password" placeholder="Enter your secret key" required> 
+				<br>
+				<label for="dob">Enter your birthday</label> 
+				<input type="date" name="dob" />
+				<br>
+				<label for="color">Choose your favourite color</label>
+				<input type="color">
+				<input type="text" name="phonenumber"  placeholder="Enter your 10 digit Number" pattern="[0-9]{10}" />
+				<h4>Gender</h4>
+				<input type="radio" name="gender" value="male"> male
+				<input type="radio" name="gender" value="female"> female
+				<input type="radio" name="gender" value="others"> others
+				<h4>Hobbies</h4>
+				<div class="checkbox">
+					<input type="checkbox" name="hobbies" value="drawing" /> 
+					<span>Drawing</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" name="hobbies" value="dancing" />
+					<span> Dancing</span>	
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" name="hobbies" value="programming" /> 
+					<span>Programming</span>
+				</div>
+				<div class="time-input">
+					<label for="time">What time do you wake up? </label>
+					<input type="time" name="time" />
+				</div>
+				<div class="slider-input">
+					<label for="scale">How bold are you?</label><br>
+					<input type="range" name="scale" />
+				</div>
+				<div class="options">
+				<label for="cars">Which TV Show do you like?</label>
+					<select name="cars">
+						  <option value="GOT">Game of Thrones</option>
+						  <option value="friends">F.R.I.E.N.D.S.</option>
+						  <option value="himym">How I met your mother?</option>
+						  <option value="siliconvalley">Silicon Valley</option>
+					</select>
+				</div>
+				<br>
+				<div class="message align-center">
+						<textarea style="" name="comment" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+				</div>
+				<input type="submit" class="submit" value="submit" />
+				<input type="reset" class="reset" value="reset">
+				</fieldset>
+
+
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

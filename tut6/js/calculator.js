@@ -32,6 +32,7 @@ var calculator= (function(){
 				var answer;	
 				if(data ==="C"){
 					setScreenFont("");
+			
 				}
 				else if(data==="="){
 					answer = calculate(screen.innerHTML);

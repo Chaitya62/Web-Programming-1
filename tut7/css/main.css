@@ -1,0 +1,21 @@
+header{
+	text-align: center;
+	padding: 0.1%;
+	background: transparent;
+	margin-bottom: 1%;
+}
+.container{
+	display: table;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+	animation: 2s roll ;
+
+}
+.row{
+	display: table-row;
+	width: 600px;
+	height: 600px;
+	
+}
