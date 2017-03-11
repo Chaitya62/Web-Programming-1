@@ -1,3 +1,6 @@
+body{
+	overflow-x: hidden;
+}
 header{
 	text-align: center;
 	padding: 0.1%;
@@ -18,4 +21,7 @@ header{
 	width: 600px;
 	height: 600px;
 	
+}
+main{
+	padding: 3%;
 }

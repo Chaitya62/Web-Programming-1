@@ -73,12 +73,27 @@ input:focus,textarea:focus{
 }
 
 .error{
-	display: block;
-	height: 600px;
-	width: 40%;
-	margin: 4%;
+	display: inline-block;
+	max-height: 100%;
+	width: 50%;
+	margin: 0%;
+	color: red;
 }
 
 .error p{
 	font-size: 20px;
 }
+
+.error ul{
+	list-style-type: none;
+	padding: 10px;
+}
+
+.error ul li{
+	padding: 10px;
+	display: block;
+	background: snow;
+}
+
+
+

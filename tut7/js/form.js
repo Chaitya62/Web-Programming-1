@@ -18,7 +18,35 @@ let validation = (function(){
 		messageArea = document.getElementById('message');
 	}
 
-	var checkValidations = function(){
+
+	var insertMessage = function(flag){
+		
+		messageArea.innerHTML = "";	
+
+		if(flag){
+	
+			messageArea.innerHTML = "";
+		}
+		else{
+			var ul = document.createElement('ul');
+			
+			var keys = Object.keys(message);
+			keys.forEach(function(key){
+				var li = document.createElement('li');
+				li.innerHTML = key + " : "+ message[key]+ "\n";
+				ul.appendChild(li);
+			});
+			messageArea.appendChild(ul);
+			
+		}
+
+		return;
+	}
+
+	var checkValidations = function(event){
+		console.log(message);
+		event.preventDefault();
+		message = {};
 		var pValue = password.value;
 		var cpValue = cpassword.value;
 		var eValue = email.value;
@@ -30,23 +58,27 @@ let validation = (function(){
 			flag = false;
 		}
 		else if(cp === 0){
-			message["password"] = "Password must contain 8 or more characters";
+			message["password"] = "password must contain 8 or more characters";
 			flag = false;
 		}
 		if(!checkEmail(eValue)){
-			message["email"] = "Email no valid";
+			message["email"] = "email not valid";
 			flag = false;
 		}
 		if(!checkUsername(userValue)){
-			message["user"] = "Username should not be empty";
+			message["username"] = "username cannot be empty";
 			flag = false;
 		}
-		if(flag){
-			return true;
+		insertMessage(flag);
+		if(flag){ 
+			alert('Success!');
+			username.value = '';
+			password.value = '';
+			cpassword.value = '';
+			email.value = '';
+		
 		}
-		else{
-			InsertMessage();
-		}
+		return flag;
 
 	}
 
@@ -76,8 +108,16 @@ let validation = (function(){
 	var init = function(){
 		message = {};
 		cacheDOM();
+		addEventHandler();
 	}
 
 
+	return {
+		init: init,
+
+	}
 
 })();
+
+
+validation.init();
