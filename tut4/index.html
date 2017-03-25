@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body{
+    background-image: url(http://www.w3schools.com/css/img_flwr.gif),url(http://www.w3schools.com/css/img_flwr.gif), url(http://www.w3schools.com/css/paper.gif);
+    background-position: right bottom,right bottom, left top;
+
+    background-repeat: repeat-y, repeat-x,repeat;
+	background-attachment: fixed;
+	background-clip: content-box;
+    padding: 15px;
+    height: 200vh;
+}
+p.hoverdemo:hover{
+	opacity: 0.3;
+}
+h1:hover{
+	background: linear-gradient(red, yellow, green);
+}
+
+#example1{
+	background:  radial-gradient(red, yellow, green);;
+}
+
+#example1 p{
+	position: relative;
+	z-index: 1000;
+}
+#example1 p:nth-child(3){
+	font-size: 40px;
+	transition: 0.4s all;
+}
+#example1 p:nth-child(3):hover{
+
+	 text-shadow: 2px 2px 10px  #000;
+}
+#example1 h1{
+	position: relative;
+	z-index: 2000;
+}
+
+.z-index-demo{
+	position: relative;
+}
+.z-index-demo img{
+	position: absolute;
+	z-index: 500;
+	transition: 1s all ease-in;
+}
+.z-index-demo img:nth-child(1){
+	z-index: 10000;
+}
+.z-index-demo img:nth-child(1):hover{
+	opacity: 0;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="z-index-demo">
+	<center>
+		<img src="./bulboff.svg">
+	<img src="./bulbon.svg">
+	</center>
+	
+</div>
+
+<div id="example1">
+<h1>Lorem Ipsum Dolor</h1>
+<p class="hoverdemo">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<p>Ut wisi enim ad minim veniam, quis nostrud exerci SURPRISEon ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+</body>
+</html>
