@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Select Element by ID</title>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    // Highlight element with id mark
+    $("#mark").css("background", "yellow");
+
+    // Highlight element with class mark
+    $(".markThisToo").css("background","red");
+
+    // Change color of element with tag h1
+    $("h1").css("color","red");
+
+    //getting element by attribute
+    $('[hello="world"]').css("color",'yellow');
+});
+</script> 
+</head>
+<body bgcolor="black">
+	<h1>This will turn red </h1>
+    <p id="mark">This is a paragraph.</p>
+    <p class="markThisToo">This is another paragraph.</p>
+    <p hello="world">This will turn yellow.</p>
+    </body>
+</html>
