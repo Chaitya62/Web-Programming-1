@@ -1,5 +1,6 @@
 body{
 	height: auto;
+
 }
 /*navbar style*/
 nav.navbar{
@@ -10,6 +11,19 @@ nav.navbar{
 	padding: 1%;
 	background: white;
 	/*border: 1px red solid;*/
+}
+
+main{
+	display: table-column;
+}
+.hero{
+	padding: 5%;
+	background: black;
+	color: #AAA;
+}
+.hero-text{
+	font-size: 60px;
+	text-align: center;
 }
 
 nav.navbar ul{

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+
+<meta charset='utf-8'>
+
+<title>jQuery Select Element by ID</title>
+
+<script src='https://code.jquery.com/jquery-1.11.3.min.js'></script>
+
+<script type='text/javascript'>
+
+$(document).ready(function(){
+
+// Highlight element with id mark
+
+//by id
+$('#mark').css('background', 'yellow');
+//by element
+$('h1').css('color','red');
+//by class
+$('.markThisToo').css('background','lightblue');
+//by attribute
+$('[hello=\'world\']').text("This was inserted dynamically");
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<h1>This will turn red</h1>
+
+<p id='mark'>This is a paragraph.</p>
+
+<p class='markThisToo'>This is another paragraph.</p>
+
+<p>This is one more paragraph.</p>
+
+<section hello="world">
+	
+</section>
+
+</body>
+
+</html>

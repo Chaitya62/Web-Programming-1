@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+<script>
+
+$(document).ready(function(){
+
+var flag = true;
+
+$('#p1').hover(function(){
+
+if(flag) alert('You entered p1!');
+
+},
+
+function(){
+
+if(flag) alert('Bye! You now leave p1!');
+
+});
+
+$('#stop').click(function(){
+	flag = false;
+});
+
+$('#stop').dblclick(function(){
+	flag= true;
+});
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<p id='p1'>This is a paragraph.</p>
+<br>
+
+<button id="stop">Click</button>
+<ul>
+	<li>Single click to stop hover</li>
+	<li>Double click to start hover</li>
+</ul>
+
+</body>
+
+</html>
+
+___________________________________________________________________________
