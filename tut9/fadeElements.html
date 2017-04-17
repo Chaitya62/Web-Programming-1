@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fade Elements</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+	.box{
+		display: table-cell;
+		width: 300px;
+		height: 300px;
+		background: red;
+		text-alig: ;n: center;
+		color: black;
+	}
+	.row{
+		display: table-column;
+	}
+	p{
+
+		display: table-cell;
+		background: yellow;
+		vertical-align: middle;
+	}
+	.buttons{
+		display: block;
+		margin: 2%;
+	}
+	.buttons button{
+		display: inline-block;
+	}
+
+
+</style>
+</head>
+<body>
+	<center>
+		<div class="buttons">
+			<button type="button" class="hide-btn">Hide Paragraphs</button>
+
+<button type="button" class="show-btn">Show Paragraphs</button>
+		</div>
+		<div class="box">
+		
+			<p> This is an element </p>
+		
+	</div>
+	</center>
+	<script>
+		$('.hide-btn').on("click",function(){
+			$('.box').fadeOut(1000);
+		});
+		$('.show-btn').on("click",function(){
+			$('.box').fadeIn(1000);
+		});
+	</script>
+</body>
+
+</html>
